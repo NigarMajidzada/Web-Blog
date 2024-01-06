@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+
+
+<div class="container">  
+
+{% block body %}
+
+<div class="jumbotron text-center">
+
+<h3>Veri Analizi Bloğuna Hoşgeldiniz</h3>
+<p>
+
+Veri analizi, firma ve işletmelerin çok daha doğru kararlar alması adına seçilen bir yoldur. Üretici işletmeler adına en önemli noktalardan bir tanesi doğrudan üreticiden veri toplayabilmektir. Fakat veri yoğunluğu bugün özelinde oldukça arttığı için bunu doğru şekilde analiz etmek pek kolay değildir. Bilhassa verinin bir bütün olarak ele alınması ve değerlendirilmesi bu analizin en zorlayıcı tarafları arasındadır. İş uygulamalarını revize etmek, firma ve müşteri arasındaki beklentileri doğru kavramak, müşteri odaklı çözüler üretmek, amaçları optimize etmek, Veri Analizi / Data Analysis sürecinin bir sonucudur.
+</p>
+
+</div>
+<ul>
+    {% for article in articles  %}
+    
+    <li>Article Id: {{article.id}} - Title: {{article.title}} - Contenct: {{article.content}}</li>
+    
+    {% endfor %}
+
+</ul>
+
+{% endblock body %}
+
+</div>
